@@ -44,4 +44,7 @@
   </script>
   <script>quizdown.register(quizdownHighlight).register(quizdownKatex).init()</script>
   <script src="/js/click_action.js"></script>
+  {{ if .Params.plotly }}
+    <script src="https://cdn.plot.ly/plotly-2.11.1.min.js"></script>
+  {{ end }}
 </head>
