@@ -15,6 +15,7 @@ mathjax: true
 apply_url : "#"
 # type
 type: "course"
+plotly: true
 ---
 
 ## Questions
@@ -31,8 +32,18 @@ The general equation of a circle is $(x-h)^2 + (y-k)^2= r^2.$ As the circle touc
 \end{align*}
 Solving these, $h=3$ and $k=-2$, and the circle is $(x-3)^2+(y+2)^2=4$. We can substitute the options into the equation to find the correct answer, $(5,-2)$.
 
+{{< plotly json="/images/coolplot1.json" height="400px" >}}
 
-# Markdown with HTML
+<div id="/images/coolplot.json" class="plotly" style="height:200px" ></div>
+<script>
+Plotly.d3.json("/images/coolplot.json", function(err, fig) {
+    Plotly.plot('/images/coolplot.json', fig.data, fig.layout, {
+        responsive: true , displayModeBar: false
+    });
+});
+</script>
+
+<!-- # Markdown with HTML
 <details>
   <summary>Click to expand!</summary>
   The general equation of a circle is $(x-h)^2 + (y-k)^2= r^2.$ As the circle touches the $x$-axis, the length of the radius is equal to $k$, so the circle is Substituting the points $(1, −2)$ and $(3, 0)$, we have two equations: \begin{align*}
@@ -115,4 +126,4 @@ What do dogs sound like?
 1. [ ] Larry Page
     > This is not Larry Page ;
 
-{{< /quizdown >}}
+{{< /quizdown >}} -->

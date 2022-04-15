@@ -86,7 +86,7 @@ a h4{
 
 .section {
   padding-top: 90px;
-  padding-bottom: 90px;
+  padding-bottom: 0px;
 
   &-sm {
     padding-top: 40px;
@@ -325,8 +325,8 @@ textarea.form-control{
 
 .content {
   * {
-    padding-top: -90px;
-    margin-bottom: 20px;
+    padding-top: -10px;
+    margin-bottom: 0px;
   }
 
   a {

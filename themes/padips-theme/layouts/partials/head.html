@@ -43,4 +43,9 @@
       src="https://cdn.jsdelivr.net/npm/quizdown@latest/public/build/extensions/quizdownHighlight.js">
   </script>
   <script>quizdown.register(quizdownHighlight).register(quizdownKatex).init()</script>
+
+  {{ if .Params.plotly }}
+    <script src="https://cdn.plot.ly/plotly-2.11.1.min.js"></script>
+  {{ end }}
+  
 </head>

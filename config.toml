@@ -52,10 +52,10 @@ link = "plugins/google-map/gmap.js"
 logo = "images/logo.png"
 # Meta data
 description = "ed-tech site for exam preparation full of free questions for IIT JEE, JEE Advanced, GATE"
-author = "Shyam Mohan"
+author = "Shs"
 # contact info
 # address = ""
-mobile = "+44-7831024100"
+mobile = "+00-0000000"
 email = "info@padips.in"
 # contact form action
 contact_form_action = "#" # contact form works with https://formspree.io
