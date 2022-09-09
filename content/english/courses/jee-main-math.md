@@ -19,6 +19,12 @@ type: "course"
 
 ## Questions
 
+
+<div id="item" > I am just a div</div>
+<button id="yes", onClick="click_action();">yes</button>
+<button id="no">no</button>
+
+<!--
 1. The circle passing through $(1, −2)$ and touching the axis of $x$ at $(3, 0)$ also passes through the point:
  :white_large_square: (2, −5) :white_check_mark: (5, −2) :white_large_square: (−2, 5) :white_large_square: (−5, 2)
 
@@ -115,4 +121,4 @@ What do dogs sound like?
 1. [ ] Larry Page
     > This is not Larry Page ;
 
-{{< /quizdown >}}
+{{< /quizdown >}} -->
