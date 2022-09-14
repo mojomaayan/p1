@@ -66,6 +66,15 @@ h6, .h6 {
     h6, .h6 {
       font-size: 14px; } }
 /* Button style */
+.btn1 {
+  --hue: var(--hue-neutral);
+  border: 10px solid hsl(var(--hue), 100%, 30%);
+  background-color: blue;
+  border-radius: 100px;
+  padding: 10px 30px;
+  color: white;
+  outline: none; }
+
 .btn {
   font-size: 16px;
   font-family: "Playfair Display", sans-serif;
@@ -208,7 +217,7 @@ a h4:hover {
 
 .section {
   padding-top: 90px;
-  padding-bottom: 90px; }
+  padding-bottom: 0px; }
   .section-sm {
     padding-top: 40px;
     padding-bottom: 40px; }
@@ -376,8 +385,8 @@ textarea.form-control {
       color: #5c5c77; }
 
 .content * {
-  padding-top: -90px;
-  margin-bottom: 20px; }
+  padding-top: -10px;
+  margin-bottom: 0px; }
 
 .content a {
   text-decoration: underline; }

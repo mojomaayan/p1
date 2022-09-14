@@ -1,21 +1,28 @@
-function click_action() {
-var item = document.getElementById("item");
-var yes = document.getElementById("yes");
-// var no = document.getElementById("no");
-//
-// yes.onclick = function(){
-//
-item.style.background = "red";
+let buttons = document.querySelectorAll('.btn1');
+buttons.forEach(button => {
+  button.addEventListener('click', function() {
+    checkFunction(button);
+    showAnswer(button);
+  });
+});
 
-if (item.style.background != "red") {
-   item.style.background = "red";
+function checkFunction(a) {
+  if (a.getAttribute("dcorrect") === "0") {
+    a.style.background = "red"
+  }
+  if (a.getAttribute("dcorrect") === "1") {
+    a.style.background = "green"
+  }
 }
-if (yes.style.background != "red") {
-   yes.style.background = "red";
-}
-// }
-//
-// no.onclick = function(){
-//     item.style.backgroundColor = "green";
-// }
+
+function showAnswer(a) {
+  let qname = a.getAttribute("name")
+  let buttons1 = document.querySelectorAll('[class="btn1"][name='+qname+']')
+  buttons1.forEach(button => {
+    if (button.getAttribute("dcorrect") === "1") {
+      button.style.background = "green";
+    }
+    else if (button != a)
+    {button.disabled = true; }
+  });
 }

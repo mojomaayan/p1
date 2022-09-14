@@ -1,4 +1,14 @@
 /* Button style */
+.btn1 {
+    --hue: var(--hue-neutral);
+    border: 10px solid hsl(var(--hue), 100%, 30%);
+    background-color: blue;
+    border-radius: 100px;
+    padding: 10px 30px;
+    color: white;
+    outline: none;
+  }
+
 .btn {
   font-size: 16px;
   font-family: $primary-font;
