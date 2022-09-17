@@ -43,7 +43,13 @@
       src="https://cdn.jsdelivr.net/npm/quizdown@latest/public/build/extensions/quizdownHighlight.js">
   </script>
   <script>quizdown.register(quizdownHighlight).register(quizdownKatex).init()</script>
- <script src="/js/click_action.js"></script>
+
+ <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
+ <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+
+ {{ $app := resources.Get "script/app.jsx" | resources.ExecuteAsTemplate "app.js" . | babel  }}
+
+  <script src="{{ $app.RelPermalink }}"></script>
   {{ if .Params.plotly }}
     <script src="https://cdn.plot.ly/plotly-2.11.1.min.js"></script>
   {{ end }}

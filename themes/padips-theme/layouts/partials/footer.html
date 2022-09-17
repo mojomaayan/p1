@@ -102,6 +102,8 @@
 <script src="{{ . | safeURL }}"></script>
 {{ end }}
 
+<script src="/js/click_action.js"></script>
+
 {{ "<!-- JS Plugins -->" | safeHTML }}
 {{ range site.Params.plugins.js}}
 <script src="{{ .link | absURL }}"></script>
