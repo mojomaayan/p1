@@ -1,3 +1,5 @@
+import ReactDOM from 'react-dom/client';
+
 function Example() {
     const [count, setCount] = React.useState(0);
     return (
